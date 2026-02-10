@@ -1,361 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leisure — Remix Archive</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leisure - William H. Davies | Typography Remix</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-        body {
-            font-family: 'Georgia', 'Times New Roman', serif;
-            background: linear-gradient(to bottom, #fafaf8 0%, #f5f5f0 100%);
-            color: #2a2a2a;
-            line-height: 1.6;
-            min-height: 100vh;
-            padding: 3rem 2rem;
-        }
+  <body class="index-page">
+    
+    <header class="index-header">
+      <div class="index-header__content">
+        <h1 class="index-header__title">Leisure</h1>
+        <p class="index-header__author">William H. Davies</p>
+        <p class="index-header__project">20 Typographic Variations</p>
+      </div>
+    </header>
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+    <main class="index-main">
+      
+      <section class="index-section">
+        <h2 class="index-section__title">Rule 1: Temporal Experience</h2>
+        <p class="index-section__desc">Exploring how typography simulates time pressure versus leisure</p>
+        <nav class="index-nav">
+          <a href="v01.html" class="index-link">01 - Neutral Baseline</a>
+          <a href="v02.html" class="index-link">02 - Time Pressure</a>
+          <a href="v03.html" class="index-link">03 - Leisure</a>
+          <a href="v04.html" class="index-link">04 - Deceleration</a>
+        </nav>
+      </section>
 
-        header {
-            text-align: center;
-            margin-bottom: 4rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        }
+      <section class="index-section">
+        <h2 class="index-section__title">Rule 2: Attention Economy</h2>
+        <p class="index-section__desc">What receives visual emphasis determines perception</p>
+        <nav class="index-nav">
+          <a href="v05.html" class="index-link">05 - Anxiety Attack</a>
+          <a href="v06.html" class="index-link">06 - Luxury of Presence</a>
+          <a href="v07.html" class="index-link">07 - Headline Scan</a>
+          <a href="v08.html" class="index-link">08 - Wrong Emphasis</a>
+        </nav>
+      </section>
 
-        .title {
-            font-size: 3.5rem;
-            font-weight: 300;
-            letter-spacing: 0.05em;
-            margin-bottom: 0.5rem;
-            color: #1a1a1a;
-        }
+      <section class="index-section">
+        <h2 class="index-section__title">Rule 3: Body & Stillness</h2>
+        <p class="index-section__desc">The physical act of standing, presence, and embodied attention</p>
+        <nav class="index-nav">
+          <a href="v09.html" class="index-link">09 - Monument</a>
+          <a href="v10.html" class="index-link">10 - Gravity</a>
+          <a href="v11.html" class="index-link">11 - Coming Into Focus</a>
+          <a href="v12.html" class="index-link">12 - Spine</a>
+        </nav>
+      </section>
 
-        .subtitle {
-            font-size: 1rem;
-            color: #666;
-            font-weight: 400;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-        }
+      <section class="index-section">
+        <h2 class="index-section__title">Rule 4: Rhythm & Repetition</h2>
+        <p class="index-section__desc">Pattern, pulse, and the poem's musical structure</p>
+        <nav class="index-nav">
+          <a href="v13.html" class="index-link">13 - Pendulum</a>
+          <a href="v14.html" class="index-link">14 - Heartbeat</a>
+          <a href="v15.html" class="index-link">15 - Breathing</a>
+          <a href="v16.html" class="index-link">16 - Chant</a>
+        </nav>
+      </section>
 
-        .intro {
-            text-align: center;
-            margin-bottom: 3rem;
-            font-size: 0.95rem;
-            color: #555;
-            font-style: italic;
-        }
+      <section class="index-section">
+        <h2 class="index-section__title">Rule 5: Searching & Interference</h2>
+        <p class="index-section__desc">Reading as scanning a field, distributed attention, cognitive overload</p>
+        <nav class="index-nav">
+          <a href="v17.html" class="index-link">17 - Scatter</a>
+          <a href="v18.html" class="index-link">18 - Redacted</a>
+          <a href="v19.html" class="index-link">19 - Overlap</a>
+          <a href="v20.html" class="index-link">20 - Interference</a>
+        </nav>
+      </section>
 
-        .rule-section {
-            margin-bottom: 4rem;
-            background: white;
-            padding: 2.5rem;
-            border-radius: 12px;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+    </main>
 
-        .rule-section:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-        }
+    <footer class="index-footer">
+      <p>Typographic Remix Project &mdash; 2026</p>
+    </footer>
 
-        .rule-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 2px solid #f0f0f0;
-        }
-
-        .rule-number {
-            font-size: 2.5rem;
-            font-weight: 300;
-            color: #d4a574;
-            margin-right: 1.5rem;
-            line-height: 1;
-        }
-
-        .rule-title {
-            font-size: 1.75rem;
-            font-weight: 400;
-            color: #2a2a2a;
-        }
-
-        .variations-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .variation-card {
-            background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
-            color: white;
-            padding: 2rem 1.5rem;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .variation-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(212, 165, 116, 0.1) 0%, rgba(212, 165, 116, 0.05) 100%);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .variation-card:hover::before {
-            opacity: 1;
-        }
-
-        .variation-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
-        }
-
-        .variation-number {
-            font-size: 0.75rem;
-            color: #d4a574;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            margin-bottom: 0.5rem;
-            text-transform: uppercase;
-        }
-
-        .variation-name {
-            font-size: 1.25rem;
-            font-weight: 400;
-            line-height: 1.3;
-        }
-
-        .quote-section {
-            text-align: center;
-            margin: 4rem 0;
-            padding: 3rem 2rem;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-        }
-
-        .quote {
-            font-size: 1.5rem;
-            font-style: italic;
-            color: #2a2a2a;
-            line-height: 1.8;
-            max-width: 800px;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        .quote::before,
-        .quote::after {
-            content: '"';
-            font-size: 3rem;
-            color: #d4a574;
-            opacity: 0.3;
-        }
-
-        .tip {
-            background: #fff9f0;
-            padding: 1.5rem 2rem;
-            border-radius: 8px;
-            border-left: 4px solid #d4a574;
-            margin: 3rem 0;
-            font-size: 0.95rem;
-            color: #555;
-        }
-
-        .tip strong {
-            color: #d4a574;
-            font-weight: 600;
-        }
-
-        @media (max-width: 768px) {
-            .title {
-                font-size: 2.5rem;
-            }
-
-            .rule-section {
-                padding: 1.5rem;
-            }
-
-            .variations-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .quote {
-                font-size: 1.2rem;
-            }
-        }
-
-        .decorative-line {
-            width: 60px;
-            height: 2px;
-            background: #d4a574;
-            margin: 2rem auto;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1 class="title">Leisure</h1>
-            <p class="subtitle">William H. Davies — Remix Archive</p>
-            <div class="decorative-line"></div>
-        </header>
-
-        <p class="intro">5 rules × 4 variations (black & white). Click any variation to view.</p>
-
-        <div class="rule-section">
-            <div class="rule-header">
-                <div class="rule-number">1</div>
-                <h2 class="rule-title">Temporal Experience</h2>
-            </div>
-            <div class="variations-grid">
-                <div class="variation-card">
-                    <div class="variation-number">v01</div>
-                    <div class="variation-name">Baseline</div>
-                </div>
-                <div class="variation-card">
-                    <div class="variation-number">v02</div>
-                    <div class="variation-name">Time Pressure</div>
-                </div>
-                <div class="variation-card">
-                    <div class="variation-number">v03</div>
-                    <div class="variation-name">Leisure</div>
-                </div>
-                <div class="variation-card">
-                    <div class="variation-number">v04</div>
-                    <div class="variation-name">Deceleration</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="rule-section">
-            <div class="rule-header">
-                <div class="rule-number">2</div>
-                <h2 class="rule-title">Attention Economy</h2>
-            </div>
-            <div class="variations-grid">
-                <div class="variation-card">
-                    <div class="variation-number">v05</div>
-                    <div class="variation-name">Anxiety Dominant</div>
-                </div>
-                <div class="variation-card">
-                    <div class="variation-number">v06</div>
-                    <div class="variation-name">Presence Dominant</div>
-                </div>
-                <div class="variation-card">
-                    <div class="variation-number">v07</div>
-                    <div class="variation-name">Headline Scanning</div>
-                </div>
-                <div class="variation-card">
-                    <div class="variation-number">v08</div>
-                    <div class="variation-name">Misguided Attention</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="rule-section">
-            <div class="rule-header">
-                <div class="rule-number">3</div>
-                <h2 class="rule-title">Body & Stillness</h2>
-            </div>
-            <div class="variations-grid">
-                <div class="variation-card">
-                    <div class="variation-number">v09</div>
-                    <div class="variation-name">Monument</div>
-                </div>
-                <div class="variation-card">
-                    <div class="variation-number">v10</div>
-                    <div class="variation-name">Grounded</div>
-                </div>
-                <div class="variation-card">
-                    <div class="variation-number">v11</div>
-                    <div class="variation-name">Approach</div>
-                </div>
-                <div class="variation-card">
-                    <div class="variation-number">v12</div>
-                    <div class="variation-name">Standing Column</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="rule-section">
-            <div class="rule-header">
-                <div class="rule-number">4</div>
-                <h2 class="rule-title">Rhythm & Repetition</h2>
-            </div>
-            <div class="variations-grid">
-                <div class="variation-card">
-                    <div class="variation-number">v13</div>
-                    <div class="variation-name">Alternating Rhythm</div>
-                </div>
-                <div class="variation-card">
-                    <div class="variation-number">v14</div>
-                    <div class="variation-name">Accumulation</div>
-                </div>
-                <div class="variation-card">
-                    <div class="variation-number">v15</div>
-                    <div class="variation-name">Modular Repeat</div>
-                </div>
-                <div class="variation-card">
-                    <div class="variation-number">v16</div>
-                    <div class="variation-name">Chant Block</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="rule-section">
-            <div class="rule-header">
-                <div class="rule-number">5</div>
-                <h2 class="rule-title">Searching & Interference</h2>
-            </div>
-            <div class="variations-grid">
-                <div class="variation-card">
-                    <div class="variation-number">v17</div>
-                    <div class="variation-name">Field Scan</div>
-                </div>
-                <div class="variation-card">
-                    <div class="variation-number">v18</div>
-                    <div class="variation-name">Vertical Scan</div>
-                </div>
-                <div class="variation-card">
-                    <div class="variation-number">v19</div>
-                    <div class="variation-name">Split Attention</div>
-                </div>
-                <div class="variation-card">
-                    <div class="variation-number">v20</div>
-                    <div class="variation-name">Interference</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="quote-section">
-            <p class="quote">What is this life if, full of care, we have no time to stand and stare.</p>
-            <div class="decorative-line"></div>
-        </div>
-
-        <div class="tip">
-            <strong>Tip:</strong> Open a few variations side-by-side and compare how each rule changes reading behavior.
-        </div>
-    </div>
-</body>
+  </body>
 </html>
